@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* introduction style starts */ 
+/* introduction section style starts */ 
 
 #intro {
   display: flex;
@@ -74,6 +74,7 @@
   word-spacing: 0.2rem;
   color: #333;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 #intro div:nth-child(3) button:hover {
@@ -82,6 +83,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  #intro {
+    padding: 3rem 4rem;
+  }
+
   #intro div:nth-child(3) p {
     width: 80%;
   }
@@ -168,9 +173,9 @@
   }
 }
 
-/* introduction style ends*/ 
+/* introduction section style ends*/ 
 
-/* services style starts */
+/* services section style starts */
 
 #services {
   background-color: rgb(252, 252, 252);
@@ -241,10 +246,26 @@
   border: 1px solid #333;
   opacity: 0.8;
   letter-spacing: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#services button:hover {
+  background-color: #333;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px)  {
+  #services {
+    padding: 3rem 4rem;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px)  {
 
+  #services {
+    padding: 3rem 6rem;
+  }
   #services > div {
     width: 70%;
   }
@@ -279,4 +300,191 @@
 
 }
 
-/* services style ends */
+/* services section style ends */
+
+/* blogs section style starts */
+
+#blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+#blog h1,
+#blog h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #333;
+  opacity: 0.8;
+  position: relative;
+}
+
+#blog h1:before,
+#blog h2:before {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+
+#blog p {
+  font-weight: 400;
+  color: #333;
+  opacity: 0.7;
+}
+
+#blog > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#blog > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#blog > div > div div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#blog img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#blog button {
+  background-color: white;
+  padding: 0.8rem 0;
+  width: 100%;
+  border-radius: 3rem;
+  border: 1px solid #333;
+  opacity: 0.8;
+  letter-spacing: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#blog button:hover {
+  background-color: #333;
+  color: white;
+}
+
+#blog hr {
+  width: 100%;
+  opacity: 0.5;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px)  {
+  #blog {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  #blog {
+    padding: 4rem;
+  }
+  #blog button {
+    width: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  #blog > div {
+    gap: 4rem;
+  }
+
+  #blog > div > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #blog > div > div:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #blog > div > div > * {
+    width: calc(95% / 2);
+  }
+
+  #blog > div > div div {
+    text-align: left;
+  }
+
+  #blog h2:before {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  #blog > div > div div button {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1200px) {
+  #blog {
+    padding: 6rem;
+  }
+
+  #blog h1,
+  #blog h2 {
+    font-size: 2rem;
+    opacity: 0.6;
+  }
+
+  #blog button {
+    width: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  #blog > div {
+    gap: 4rem;
+  }
+
+  #blog > div > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #blog > div > div:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #blog > div > div > * {
+    width: calc(95% / 2);
+  }
+
+  #blog > div > div div {
+    text-align: left;
+    gap: 2rem;
+  }
+
+  #blog h2:before {
+    left: 0;
+    transform: translateX(0);
+  }
+
+  #blog > div > div div button {
+    width: fit-content;
+  }
+}
+/* blogs section style ends */
