@@ -488,3 +488,109 @@
   }
 }
 /* blogs section style ends */
+
+/* duis section style starts */
+
+#duis {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-image: url('./img/street.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 3rem 1rem;
+  position: relative;
+  gap: 1.5rem;
+}
+#duis > * {
+  z-index: 1000;
+}
+
+#duis div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 63, 60, 0.753);
+  z-index: 0;
+}
+
+#duis button {
+  background-color: inherit;
+  padding: 0.8rem 0;
+  width: 100%;
+  border-radius: 3rem;
+  border: 1px solid #fff;
+  opacity: 0.8;
+  letter-spacing: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+
+#duis button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+#duis h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  position: relative;
+}
+
+#duis p {
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #duis {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #duis {
+    padding: 4rem;
+  }
+
+  #duis h1 {
+    font-size: 2rem;
+  }
+
+  #duis button {
+    width: auto;
+    padding: 0.8rem 2rem;
+  }
+
+  #duis p {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #duis {
+    padding: 6rem;
+  }
+
+  #duis h1 {
+    font-size: 2rem;
+  }
+
+  #duis button {
+    width: auto;
+    padding: 0.8rem 2rem;
+  }
+
+  #duis p {
+    width: 50%;
+  }
+}
+/* duis section style ends */
