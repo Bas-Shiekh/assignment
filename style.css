@@ -7,13 +7,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* introduction style starts */ 
+
 #intro {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 3rem;
-  padding: 4rem 1rem 0;
+  padding: 4rem 1rem 2rem;
 }
 
 #intro div:nth-child(1) {
@@ -166,4 +168,115 @@
   }
 }
 
+/* introduction style ends*/ 
 
+/* services style starts */
+
+#services {
+  background-color: rgb(252, 252, 252);
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+#services h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #333;
+  opacity: 0.8;
+  position: relative;
+}
+
+#services h1:before {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  opacity: 0.8;
+  transform: translateX(-50%);
+}
+
+#services p {
+  font-weight: 400;
+  color: #333;
+  opacity: 0.7;
+}
+
+#services > div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+#services > div div {
+  border: 1.5px solid #333;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  border-radius: 50%;
+  position: relative;
+}
+
+#services > div div i {
+  font-size: 2rem;
+  color: #333;
+}
+
+#services button {
+  background-color: white;
+  padding: 0.8rem 0;
+  width: 100%;
+  border-radius: 3rem;
+  border: 1px solid #333;
+  opacity: 0.8;
+  letter-spacing: 4px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px)  {
+
+  #services > div {
+    width: 70%;
+  }
+
+  #services button {
+    width: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.7rem;
+  }
+
+}
+
+@media (min-width: 1200px)  {
+
+  #services {
+    gap: 3rem;
+  }
+
+  #services > div {
+    width: 50%;
+  }
+
+  #services button {
+    width: auto;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  #services p{
+    width: 60%;
+  }
+
+}
+
+/* services style ends */
