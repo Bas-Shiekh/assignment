@@ -593,4 +593,261 @@
     width: 50%;
   }
 }
+
 /* duis section style ends */
+
+/* footer section style starts */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: rgb(238, 238, 238);
+}
+
+footer h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #333;
+  opacity: 0.8;
+  position: relative;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer h1:before {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  opacity: 0.8;
+  transform: translateX(-50%);
+}
+
+footer p {
+  font-weight: 400;
+  color: #333;
+  opacity: 0.7;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+footer ul li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid rgba(51, 51, 51, 0.53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+  opacity: 0.8;
+}
+
+footer ul li:hover {
+  border: 0;
+  background-color: rgba(51, 51, 51, 0.53);
+}
+
+footer ul li:hover a {
+  color: rgb(238, 238, 238);
+}
+
+footer ul li a i {
+  font-size: 1.5rem;
+}
+
+footer hr {
+  margin: 2rem;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer form >* {
+  width: 100%;
+}
+
+footer form input,
+footer form textarea {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(51, 51, 51, 0.53);
+}
+
+footer form textarea {
+  height: 150px;
+}
+
+footer form input::placeholder {
+  color: rgba(51, 51, 51, 0.53);
+}
+
+footer button {
+  background-color: inherit;
+  padding: 0.8rem 0;
+  width: 100%;
+  border-radius: 3rem;
+  border: 1px solid #333;
+  opacity: 0.8;
+  letter-spacing: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: #333;
+}
+
+footer button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  footer {
+    padding: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer h1 {
+    font-size: 2rem;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  footer div,
+  footer form {
+    width: calc(95% / 2);
+  }
+
+  footer form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer div {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  footer ul {
+    justify-content: flex-start;
+  }
+
+  footer h1:before {
+    content: '';
+    left: 0;
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+
+  footer form input {
+    width: 48%;
+    border-radius: 0.8rem;
+  }
+
+  footer form textarea {
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+  
+  footer form button{
+    width: auto;
+    padding: 0.8rem 2rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    padding: 6rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer h1 {
+    font-size: 2rem;
+  }
+
+  footer hr {
+    display: none;
+  }
+
+  footer div,
+  footer form {
+    width: calc(95% / 2);
+  }
+
+  footer form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  footer div {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  footer ul {
+    justify-content: flex-start;
+  }
+
+  footer h1:before {
+    content: '';
+    left: 0;
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+
+  footer form input {
+    width: 48%;
+    border-radius: 0.8rem;
+  }
+
+  footer form textarea {
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+  
+  footer form button{
+    width: auto;
+    padding: 0.8rem 2rem;
+    font-size: 0.6rem;
+  }
+
+}
+
+/* footer section style ends */
